@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi</title>
+    <!-- script tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- BLOCK adalah elemen yang memiliki sifat block dari ujung kanan, menuin layar, ketika menambahkan item maka dia akan ke bawah kalo menambahkan foto dia akan ke bawah jdi kalo block menambah content bkalan ke bawah
+      -->
+    <div class="bg-blue-300 block">Kotak 1 (block)</div>
+    <div class="bg-blue-500 block">Kotak 2 (block)</div>
+
+    <br />
+
+    <!-- Inline gedenya menyesuaikan konten, jadi jika content menambah maka dia akan ikut bertambah -->
+    <span class="bg-cyan-300 inline">Kotak 1 (inline)</span>
+    <span class="bg-cyan-500 inline">Kotak 2 (inline)</span>
+
+    <br />
+    <br />
+    <!-- Inline Block adalah elemen yang memiliki sifat inline-block, jadi jika content menambah maka dia akan ikut bertambah tetapi jika menambah foto dia akan ke samping dan dia juga bisa menambahkan height dan weitgh -->
+    <span class="bg-amber-300 inline-block w-24 h-12">Kotak 1</span>
+    <span class="bg-amber-500 inline-block w-24 h-12">Kotak 2</span>
+
+    <!-- span tulisan -->
+    <!-- div itu pembungkus -->
+
+    <br />
+    <!-- Flex menyusun elemen sejajar, menaruh item tengah, 
+     layout rata kanan kiri juga mengatur rata kanan, 
+     kiri untuk horizontal, berteman justify, gap, align, items -->
+    <!-- justify atur arah horizontal -->
+    <!-- items atur arah vertikal -->
+    <!-- gap atur jarak antar item -->
+    <div class="flex flex-col gap-2 bg-blue-100 p-2">
+      <div class="bg-fuchsia-300 w-16 h-16">A</div>
+      <div class="bg-amber-500 w-16 h-16">B</div>
+      <div class="bg-fuchsia-700 w-16 h-16">C</div>
+    </div>
+  </body>
+</html>

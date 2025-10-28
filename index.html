@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Portfolio💙</title>
+    <!-- script tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon" />
+    <!-- goggle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    .font-code {
+      font-family: "Fontdiner Swanky", serif;
+    }
+    .color-1 {
+      color: #3d74b6;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="sticky top-0 z-50 bg-[#3D74B6]/90 backdrop-blur border-b border-amber-300"
+      aria-label="Primary"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Untuk tampilan laptop -->
+        <!-- tracking-wider untuk jarak nama -->
+        <div class="flex items-center justify-between h-16">
+          <a
+            href="#"
+            class="flex items-center text-white text-xl font-najla uppercase tracking-wider font-serif"
+            >NajjHaura</a
+          >
+          <button
+            id="hamburger"
+            class="md:hidden p-2 rounded hover:bg-amber-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu"
+          >
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <!-- flex col kebawah -->
+          <!-- justify arah alur horizontal -->
+          <!-- row -->
+           
+           <!-- Pemanggilan Tag a href -->
+          <div id="main-menu" class="hidden md:flex md:items-center md:gap-2">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left"
+            >
+              <a
+                href="#about-me"
+                class="px-3 py-2 text-white hover:text-blue-400 uppercase font-najla font-bold"
+                >About Me</a
+              >
+              <a
+                href="#what i-do"
+                class="px-3 py-2 text-white hover:text-blue-400 uppercase font-najla font-bold"
+                >what I Do</a
+              >
+              <a
+                href="#portfolio"
+                class="px-3 py-2 text-white hover:text-blue-400 uppercase font-najla font-bold"
+                >Portofolio</a
+              >
+              <a
+                href="#My-skills"
+                class="px-3 py-2 text-white hover:text-blue-400 uppercase font-najla font-bold"
+                >My Skills</a
+              >
+              <a
+                href="#My-blog"
+                class="px-3 py-2 text-white hover:text-blue-400 uppercase font-najla font-bold"
+                >My Blog</a
+              >
+              <a
+                href="#contact"
+                class="bg-amber-600 hover:bg-amber-300 rounded-xl px-4 py-2 font-najla font-serif text-white justify-center items-center"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+
+          <!-- Menu Untuk HP -->
+          <div
+            id="mobile-panel"
+            class="md:hidden hidden border-t border-b-blue-800 py-2"
+          >
+            <a
+              href="#"
+              class="block px-3 py-2 text-blue-300 hover:text-amber-300 uppercase font-najla"
+              >About Me</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-blue-300 hover:text-amber-300 uppercase font-najla"
+              >School</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-blue-300 hover:text-amber-300 uppercase font-najla"
+              >Portofolio</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-blue-300 hover:text-amber-300 uppercase font-najla"
+              >Skills</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-blue-300 hover:text-amber-300 uppercase font-najla"
+              >Youtube</a
+            >
+            <a
+              href="#"
+              class="bg-amber-600 hover:bg-amber-300 rounded-xl px-4 py-2 font-najla font-serif text-white justify-center items-center"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="bg-[#154D71]">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div
+          class="order-2 lg:order-2 border-[12px] sm:border-[16px] border-[#1C6EA4] rounded-2xl shadow-2xl overflow-hidden"
+        >
+          <img src="/image/My-self.jpg" class="w-full h-100 object-cover" />
+        </div>
+
+        <div class="order-1 lg:order-1">
+          <h1
+            class="font-najla text-3xl text-blue-500 font-bold leading-tight font-serif"
+          >
+            Hello I'm <span>Najla</span>
+          </h1>
+          <h2 class="font-najla text-2xl font-serif text-white">
+            Website Portofolio
+          </h2>
+          <p class="mt-5 leading-relaxed text-amber-50 font-serif">
+           Halo, nama saya <b>Najla Haura Mumtazah</b>. Saya lahir di Jakarta, pada 27 Oktober 2007. 
+          Saya lulusan dari <b>SMK IT Assalam Karawang</b> jurusan <b>Rekayasa Perangkat Lunak</b>. 
+          Saat ini saya sedang melanjutkan pendidikan di <b>Politeknik IDN Bogor, Jonggol</b>. 
+          Saya memiliki hobi menonton film India Bollywood karena cerita dan musiknya yang menarik. 
+          Cita-cita saya sederhana, yaitu bisa menjadi apa saja yang penting sukses dan mampu membahagiakan orang tua.
+          </p>
+
+          <div class="mt-6 flex flex-wrap items-center gap-4">
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-lg bg-[#799EFF] hover:bg-[#FEFFC4] text-white px-4 py-3 hover:text-blue-400 text-2xl"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-lg bg-[#799EFF] hover:bg-[#FEFFC4] text-white px-4 py-3 hover:text-blue-400 text-2xl"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-2xl bg-[#799EFF] hover:bg-[#FEFFC4] text-white px-4 py-3 hover:text-blue-400 text-2xl"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-2xl bg-[#799EFF] hover:bg-[#FEFFC4] text-white px-4 py-3 hover:text-blue-400 text-2xl"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-2xl bg-[#799EFF] hover:bg-[#FEFFC4] text-white px-4 py-3 hover:text-blue-400 text-2xl"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Do -->
+    <section id="what i-do" class="bg-[#4682A9]">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#91C8E4]"
+      >
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-extrabold font-najla text-white underline underline-offset-8 decoration-blue-500 decoration-4 uppercase tracking-widest"
+          >
+            What I Do
+          </h2>
+        </div>
+
+        <!-- Grid what I do -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="rounded-xl bg-cyan-800/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#5EABD6] text-white place-items-center">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3 class="text-slate-100 font-najla font-serif text-lg tracking-wider">About</h3>
+            </div>
+            <p class="text-slate-300 font-najla">SMK IT Assalam Karawang menawarkan 
+              jurusan-jurusan seperti Teknik Kendaraan Ringan Otomotif, Rekayasa Perangkat Lunak, 
+              Teknik Mekanik Industri, Kuliner.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="rounded-xl bg-cyan-800/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#5EABD6] text-white place-items-center">
+                <i class="fa-solid fa-mobile-button"></i>
+              </div>
+              <h3 class="text-slate-100 font-najla font-serif text-lg tracking-wider">Social</h3>
+            </div>
+            <p class="text-slate-300 font-najla">Lingkungannya bersih, serta banyak sekali pohon-pohon dan cocok sekali untuk belajar, begitupun ada saung 
+              juga jadi bisa nongkrong bersama teman-teman.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="rounded-xl bg-cyan-800/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#5EABD6] text-white place-items-center">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3 class="text-slate-100 font-najla font-serif text-lg tracking-wider">Browser</h3>
+            </div>
+            <p class="text-slate-300 font-najla">Anda bisa mendapatkan update informasi terbaru terkait dengan kegiatan akademik dan non-akademik yang dilaksanakan oleh SMK IT ASSALAM KARAWANG melalui website resmi SMK IT ASSALAM KARAWANG dengan 
+              alamat www.smkitassalamkarawang.com.
+          </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="bg-[#154D71]">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#91C8E4]">
+        <!-- Judul -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-extrabold font-najla text-white underline underline-offset-8 decoration-blue-500 decoration-4 uppercase tracking-widest"
+          >
+            Portfolio
+          </h2>
+          </p>
+        </div>
+
+        <!-- Grid Portfolio -->
+        <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-[#A8F1FF] rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition duration-300">
+          <a href="https://studio.youtube.com/channel/UC9PCMbgFuOiBqa5jsjHJQ5w/videos" target="_blank">
+            <img src="/image/youtube.png" alt="YouTube Project"
+              class="w-full h-48 object-contain bg-[#4ED7F1] p-4 hover:opacity-90 transition">
+          </a>
+          <div class="p-5">
+         <h3 class="text-xl font-bold text-[#3D74B6] mb-2 text-center">YouTube Clone</h3>
+         <p class="text-gray-600 mb-4 text-center">Membuat website mirip YouTube menggunakan React JS.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#A8F1FF] rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition duration-300">
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+        <img src="/image/email.png" alt="Gmail Project"
+        class="w-full h-48 object-contain bg-[#4ED7F1] p-4 hover:opacity-90 transition">
+      </a>
+      <div class="p-5">
+      <h3 class="text-xl font-bold text-[#3D74B6] mb-2 text-center">Gmail Clone</h3>
+      <p class="text-gray-600 mb-4 text-center">Membuat website mirip Gmail menggunakan React JS.</p>
+    </div>
+      </div>
+
+    <!-- Card 3 -->
+     <div class="bg-[#A8F1FF] rounded-2xl shadow-xl overflow-hidden hover:scale-105 transition duration-300">
+    <a href="https://github.com/Najla-cloud27" target="_blank">
+      <img src="/image/github.png" alt="GitHub Project"
+        class="w-full h-48 object-contain bg-[#4ED7F1] p-4 hover:opacity-90 transition">
+    </a>
+    <div class="p-5">
+      <h3 class="text-xl font-bold text-[#3D74B6] mb-2 text-center">GitHub Clone</h3>
+      <p class="text-gray-600 mb-4 text-center">Membuat website mirip GitHub menggunakan React JS.</p>
+    </div>
+    </div>
+    </section>
+
+    <!-- My Skills -->
+    <section id="My-skills" class="bg-[#4682A9] scroll-mt-24">
+      <div class="max-w-6xl mx-auto px-2 md:px-2 py-6 border-t border-[#91C8E4]">
+        <!-- Judul -->
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-extrabold font-najla text-white underline underline-offset-8 decoration-blue-500 decoration-4 uppercase tracking-widest"
+          >
+            My Skills
+          </h2>
+        </div>
+        <div class="text-left mb-8">
+          <h3 class="text-xl font-semibold font-serif text-white">Web Developer</h3>
+          <p class="text-gray-300 font-serif">Saya Memiliki Skill Seperti Berikut</p>
+        </div>
+
+        <!-- Grid Skills -->
+         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Card Skills 1 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/adobe-AI-1.png" alt="Adobe Ilustrator" class="w-12 h-12 mr-2">
+           </div>
+          <!-- Card Skills 2 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/Adobe-P-2.png" alt="Adobe Photoshop" class="w-12 h-12 mr-2">
+           </div>
+          <!-- Card Skills 3 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/HTML-1.png" alt="HTML" class="w-12 h-12 mr-2">
+           </div>
+          <!-- Card Skills 4 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/JS-1.png" alt="JavaScript" class="w-12 h-12 mr-2">
+           </div>
+          <!-- Card Skills 5 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/adobe-xd-1.png" alt="Adobe XD" class="w-12 h-12 mr-2">
+           </div>
+          <!-- Card Skills 6 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/adobe-blender-1.png" alt="Blender" class="w-12 h-12 mr-2">
+           </div>
+          <!-- Card Skills 7 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/Sketcha-logo-1.png" alt="Sketch" class="w-12 h-12 mr-2">
+           </div>
+          <!-- Card Skills 8 -->
+           <div class="flex items-center justify-center bg-[#A8F1FF] rounded-lg py-6">
+             <img src="/image/figma1.png" alt="Figma" class="w-12 h-12 mr-2">
+           </div>
+         </div> 
+      </div>
+    </section>
+
+        <!-- My Blog -->
+        <section id="My-blog" class="bg-[#0D5EA6] scroll-mt-24">
+          <div class="max-w-6xl mx-auto px-2 md:px-4 py-6 border-t border-[#91C8E4]">
+            <!-- Judul -->
+            <div class="text-center mb-12">
+              <h2
+                class="text-3xl font-extrabold font-najla text-white underline underline-offset-8 decoration-blue-500 decoration-4 uppercase tracking-widest"
+              >
+                My Blog
+              </h2>
+            </div>
+
+           <!-- Grid Blog -->
+            <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+           <div class="bg-[#4682A9] rounded-xl shadow-lg p-6 flex items-start gap-4 hover:scale-105 transition duration-300">
+
+            <!-- Tanggal -->
+            <div class="text-center pr-4 border-r border-slate-600">
+             <p class="text-slate-300 font-bold text-sm uppercase">Aug</p>
+             <div class="w-6 h-[2px] bg-slate-500 mx-auto my-1"></div>
+             <p class="text-2xl font-bold text-white">24</p>
+            </div>
+             <!-- Konten -->
+             <div>
+              <h4 class="text-amber-500 font-bold uppercase text-sm">Jane Doe</h4>
+              <h3 class="text-white text-lg font-bold">Review Jasa Website</h3>
+              <p class="text-black mt-1">Jasanya bagus, good job dan cepat</p>
+              <a href="#" class="text-amber-500 font-bold mt-3 inline-block">Read More</a>
+            </div>
+          </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#4682A9] rounded-xl shadow-lg p-6 flex items-start gap-4 hover:scale-105 transition duration-300">
+        <div class="text-center pr-4 border-r border-slate-600">
+          <p class="text-slate-300 font-bold text-sm uppercase">Aug</p>
+          <div class="w-6 h-[2px] bg-slate-500 mx-auto my-1"></div>
+          <p class="text-2xl font-bold text-white">24</p>
+        </div>
+        <div>
+          <h4 class="text-amber-500 font-bold uppercase text-sm">Jane Doe</h4>
+          <h3 class="text-white text-lg font-bold">Review Jasa Website</h3>
+          <p class="text-black mt-1">Jasanya bagus, good job dan cepat</p>
+          <a href="#" class="text-amber-500 font-bold mt-3 inline-block">Read More</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#4682A9] rounded-xl shadow-lg p-6 flex items-start gap-4 hover:scale-105 transition duration-300">
+        <div class="text-center pr-4 border-r border-slate-600">
+          <p class="text-slate-300 font-bold text-sm uppercase">Aug</p>
+          <div class="w-6 h-[2px] bg-slate-500 mx-auto my-1"></div>
+          <p class="text-2xl font-bold text-white">24</p>
+        </div>
+        <div>
+          <h4 class="text-amber-500 font-bold uppercase text-sm">Jane Doe</h4>
+          <h3 class="text-white text-lg font-bold">Review Jasa Website</h3>
+          <p class="text-black mt-1">Jasanya bagus, good job dan cepat</p>
+          <a href="#" class="text-amber-500 font-bold mt-3 inline-block">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+
+        <!-- Contact Me -->
+        <section id="contact" class="bg-[#154D71] scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#91C8E4]">
+          <!-- Judul -->
+          <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-extrabold font-najla text-white underline underline-offset-8 decoration-blue-500 decoration-4 uppercase tracking-widest"
+          >
+            Contact Me
+          </h2>
+          <p class="text-slate-200 font-serif mt-3">Silakan hubungi saya melalui form di bawah ini 👇</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="max-w-3xl mx-auto bg-cyan-800/70 p-8 rounded-2xl shadow-xl">
+          <form action="#" method="POST" class="space-y-6">
+            <!-- Nama -->
+            <div>
+              <label for="name" class="block text-white font-najla mb-2">Nama</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Masukkan nama Anda"
+                class="w-full px-4 py-3 rounded-lg bg-[#E0F4FF] text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-white font-najla mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Masukkan email Anda"
+                class="w-full px-4 py-3 rounded-lg bg-[#E0F4FF] text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
+              />
+            </div>
+
+            <!-- Pesan -->
+            <div>
+              <label for="message" class="block text-white font-najla mb-2">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tulis pesan Anda..."
+                class="w-full px-4 py-3 rounded-lg bg-[#E0F4FF] text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Tombol -->
+            <div class="text-center">
+              <button
+                type="submit"
+                class="px-6 py-3 bg-amber-600 hover:bg-amber-400 text-white font-najla font-bold rounded-xl shadow-lg transition"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Location (Karawang Timur) -->
+    <section id="location" class="bg-[#5682B1] scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-16 border-t border-pink-200">
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <!-- Map Card -->
+      <div class="bg-[#FFE4F1] rounded-2xl shadow-xl overflow-hidden">
+        <div class="aspect-video">
+          <iframe
+            class="w-full h-full border-0"
+            src="https://www.google.com/maps?q=Karawang%20Timur%2C%20Karawang%2C%20Jawa%20Barat&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Address / Text -->
+      <div class="text-white">
+        <h3 class="text-2xl font-bold mb-3">Lokasi</h3>
+        <p class="text-pink-50 text-lg leading-relaxed">
+          Karawang Timur, Karawang, Jawa Barat, Indonesia
+        </p>
+        <p class="mt-4 text-pink-50">
+          Akses mudah, area nyaman untuk belajar & berkegiatan.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#687FE5]">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 py-6 flex flex-col sm:flex-row items-center justify-center text-black">
+    <p class="font-medium">
+      © <span id="year"></span> — All Rights Reserved by NajlaHaura
+    </p>
+    <a href="#top" class="mt-2 sm:mt-0 inline-flex items-center gap-2
+     text-[#093FB4] hover:text-blue-900">
+    </a>
+  </div>
+</footer>
+
+<script>
+  // tahun otomatis
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      AOS.init({
+        duration: reduceMotion ? 0 : 600,
+        once: true,
+      });
+
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-panel");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
